@@ -1,0 +1,877 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Garamond:wght@500&family=Dancing+Script:wght@700&family=Lora:ital,wght@1,500&family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,600;1,600&display=swap');
+
+
+/* Reset some default styles */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --heading: rgb(0 10 45);
+    --para: #777777;
+    --para-tint: white;
+--gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    --shadpw: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    line-height: 1.6;
+    background: rgb(0 10 45);
+
+    /* background: #3001EE;
+    background: linear-gradient(90deg, #3001EE, #F439B4); */
+}
+
+
+/* ================================
+Header Section Here
+================================ */
+
+header {
+    /* background-color: rgb(0 10 45); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 10px 3px greenyellow;
+    background: rgb(0 10 45);
+    color: #fff;
+    padding: 5px;
+    padding-bottom: 1px;
+    position: sticky;
+    z-index: 9999;
+}
+
+
+    
+    /* display: inline; */
+    /* font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif; */
+/* font-family: 'PT Serif', serif; */
+/* border-radius: 10px; */
+/* border: none; */
+/* background-color: white; */
+/* box-shadow: 4px 0px 0px 0px blanchedalmond; */
+
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  height: 6rem;
+}
+nav ul {
+    list-style: none;
+    margin: 20px;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    padding-top: 5rem;
+    margin-right: 5px;
+    
+}
+
+nav a {
+    color: var(--para-tint);
+    text-decoration: none;
+    text-transform: uppercase;
+    /* border: 2px solid white; */
+    /* background-color:#3001EE;
+    background: linear-gradient(90deg, #3001EE, #F439B4);; */
+    margin: 10px;
+    /* border: 2px solid white; */
+    padding: 10px 20px;
+    font-family:'Bree Serif', serif; 
+    /* font-family: 'Bree Serif', serif; */
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
+
+    font-weight: 500;
+    border-radius: 5px;
+    /* background-color: white; */
+    box-shadow: 2px 2px 4px 0px wheat;
+    font-size: 20px;
+
+}
+
+nav a:hover{
+    /* background-color:#3001EE;
+    background: linear-gradient(90deg, #3001EE, #F439B4); */
+    box-shadow: 2px 2px 4px 0px greenyellow;
+    /* font-size: 21px; */
+    transition: all 0.3s;
+    background-color: yellowgreen;
+    color: black;
+    /* transition-delay: 9s; */
+    /* text-decoration:underline; */
+    /* transition: 80s; */
+}
+
+.logo_head{
+    height: 5rem;
+    margin-right: 810px;
+    padding-bottom: 70px;
+}
+
+
+
+
+/* ================================
+home Section Here
+================================ */
+
+.container {
+    max-width: 1600px;
+    /* margin: 0 auto; */
+    margin-top: 50px;
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    gap: 120px;
+}
+
+.boxLeft{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    width: 40%;
+    margin-left: 30px;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+#homep1{
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.boxLeft h1{
+    font-size: 80px;
+    color: yellowgreen;
+    font-family: cursive;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 9px 0px wheat;
+    border-radius: 20px;
+    padding-left: 7px;
+}
+
+.boxLeft h2{
+  color: white;
+  /* text-shadow: 3px 3px palevioletred; */
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  text-decoration: underline;
+  box-shadow: 2px 2px 20px 0px palevioletred;
+  text-align: center;
+  margin-left: 50px;
+}
+
+#homep2{
+  font-family: 'Dancing Script', cursive;
+   /* justify-content: center; */
+   font-size: 25px;
+   align-items: center;
+}
+
+.boxRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.leftInside img{
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+    width: 600px;
+    box-shadow: -2px -3px 9px 0px wheat;
+}
+
+#cv_btn{
+    font-size: 25px;
+    padding: 0px 10px;
+    border: 7px solid yellowgreen;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    font-family: cursive;
+    color: black;
+    font-weight: bolder;
+}
+
+#cv_btn:hover{
+    box-shadow: 2px 3px 9px 0px wheat;
+    transition: all 0.3s;
+}
+
+#hire_btn{
+    font-size: 25px;
+    padding: 10px 10px;
+    border: 2px solid white;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color:#3001EE;
+    background: linear-gradient(90deg, #3001EE, #F439B4);
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    font-weight: bolder;
+    margin-left: 250px;
+}
+
+#hire_btn:hover{
+    box-shadow: 2px 3px 9px 0px yellowgreen;
+    transition: all 0.3s;
+}
+
+
+
+.rightInside{
+    margin-top: 80px;
+    /* margin-right: 2px; */
+    /* border:2px solid white;  */
+    box-shadow: 2px 3px 9px 0px wheat;
+    padding: 10px;
+    height: 220px;
+    display: flex;
+    gap: 200px;
+}
+.item{
+    border: 2px solid yellowgreen;
+    margin: 6px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.fa-2x{
+    color: wheat;
+    font-size: 40px;
+}
+
+.item:hover{
+    box-shadow: 2px -3px 2px 0px wheat;
+}
+
+footer {
+    background-color:#3001EE;
+    background: linear-gradient(90deg, #3001EE, #F439B4);;
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=01a4a8&c2=01016f&gt=l&gd=dcr
+*/
+/* background: #01A4A8;
+background: linear-gradient(270deg, #01A4A8, #01016F); */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+/* Sticky upper key at left-bottom */
+.upper-key {
+    position: fixed;
+    bottom: 20px;
+    left: 1460px;
+    background-color: yellowgreen;
+    color: navy;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+} */
+
+
+
+/* ================================
+About Section Here
+================================ */
+
+
+.container2{
+  max-width: 1500px;
+}
+
+
+
+.aboutBox{
+  display: flex;
+  flex-direction: column;
+  margin-left: 140px;
+  margin-right: 140px;
+  /* justify-content: space-around; */
+  /* gap: 50px; */
+  /* margin: 20px; */
+  margin-top: 40px;
+  /* border: 3px solid yellowgreen; */
+  /* justify-content: center; */
+}
+
+
+.abouthead{
+  color: white;
+  text-shadow: 3px 3px palevioletred;
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  box-shadow: 2px 2px 0px 9px palevioletred;
+  border-radius: 3px;
+  text-align: center;
+  margin-left: 310px;
+  margin-bottom: 5rem;
+}
+
+#para1{
+  border-radius: 4px;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  justify-content: center;
+  box-shadow: 2px -2px 9px 2px wheat;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #ff05a8;
+  text-shadow: 1px 1px palevioletred;
+  text-align: center;
+}
+#para2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+#head2{
+  color: white;
+  /* text-shadow: 3px 3px palevioletred; */
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  text-decoration: underline;
+  box-shadow: 2px 2px 30px 0px wheat;
+  text-align: center;
+  margin-left: 310px;
+}
+
+
+.statsBox{
+  max-width: 80%;
+  margin-left: 150px;
+  /* align-self: center; */
+}
+
+.bio-data-stats{
+  display: flex;
+  padding: 4.4rem 0;
+  margin-bottom: 10rem;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.bio-progress-bar{
+  width: 90%;
+  height: 0.7rem;
+  background-color: grey;
+  border-radius: 10rem;
+  position: relative;
+  box-shadow: 2px 2px 3px 0px wheat;
+}
+
+.bio-progress-bar::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: inherit;
+  /* background-color: yellowgreen; */
+  background-color:#3001EE;
+  background: linear-gradient(90deg, #3001EE, #F439B4);
+  border-radius: 10rem;
+}
+
+.bio-progress-2::before{
+  width: 99%;
+}
+.bio-progress-3::before{
+  width: 85%;
+}
+.bio-progress-4::before{
+  width: 80%;
+}
+.bio-progress-5::before{
+  width: 70%;
+}
+
+.bio-progress-bar span{
+  position: absolute;
+  top: 1.6rem;
+  width: 2.5rem;
+  height: 1.5rem;
+  background-color: greenyellow;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: 0;
+  font-weight: bold;
+}
+
+.bio-progress-bar span{
+  left: 77%;
+}
+.bio-progress-2 span{
+  left: 96%;
+}
+.bio-progress-3 span{
+  left: 82%;
+}
+.bio-progress-4 span{
+  left: 77%;
+}
+.bio-progress-5 span{
+  left: 67%;
+}
+
+.bio-progress-bar span::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.8rem solid greenyellow;
+  border-color: transparent;
+  border-bottom-color: greenyellow;
+  top: -1.6rem;
+}
+
+/* ================================
+Project Section Here
+================================ */
+.container3{
+  height:100%;
+  max-width: 1500px;
+
+  /* align-items: center; */
+}
+.container3 h2{
+  color: white;
+  /* text-shadow: 3px 3px palevioletred; */
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  text-decoration: underline;
+  box-shadow: 2px 2px 30px 0px wheat;
+  text-align: center;
+  margin-left: 400px;
+}
+.container3 h2:hover{
+  background-color: yellowgreen;
+  color: black;
+}
+
+.my_projects{
+  max-width: 90%;
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 30px;
+  /* border: 2px solid yellow; */
+  overflow: hidden;
+}
+
+#pro_img{
+  height: 270px;
+  width: 565px;
+  /* width: fit-content; */
+
+}
+
+
+table{
+  border: 6px solid black;
+  box-shadow: inset 2px 2px 190px 0px wheat;
+  box-shadow: -2px -2px 60px 5px grey;
+  width: 100%;
+  margin-bottom: 510px;
+  /* padding-top: 20px; */
+}
+td{
+  text-align: center;
+  height: 200px;
+}
+tr:hover {
+  background-color: greenyellow;
+  color: black;
+  /* transform: all scale(2x); */
+}
+
+#table_head{
+  font-size: 50px;
+  font-family: 'Bree Serif', serif;
+
+}
+#table_para{
+  font-size: 25px;
+  /* color: navy; */
+  font-family: 'Dancing Script', cursive;
+}
+
+
+
+/* ================================
+Footer Section Here
+================================ */
+
+
+.logo{
+  height: 6rem;
+}
+
+.footer-distributed{
+  background-color:#3001EE;
+  background: linear-gradient(90deg, #3001EE, #F439B4);
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+color:  #ffffff;
+font: normal 36px 'Open Sans', cursive;
+margin: 0;
+}
+
+.footer-distributed h3 span{
+color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+color:  greenyellow;
+margin: 20px 0 12px;
+padding: 0;
+}
+
+.footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+font-weight:400;
+text-decoration: none;
+color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+color:  greenyellow;
+font-size: 14px;
+font-weight: normal;
+margin: 15px;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+width: 35%;
+}
+
+.footer-distributed .footer-center i{
+background-color:  greenyellow;
+color: navy;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+font-size: 17px;
+line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+display: inline-block;
+color: #ffffff;
+font-weight:400;
+vertical-align: middle;
+margin:0;
+}
+
+.footer-distributed .footer-center p span{
+display:block;
+font-weight: normal;
+font-size:14px;
+line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+color:  lightseagreen;
+text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+content: "|";
+font-weight:300;
+font-size: 20px;
+left: 0;
+color: #fff;
+display: inline-block;
+padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+line-height: 20px;
+color:  var(--heading);
+font-size: 13px;
+font-family: poppins;
+font-weight: normal;
+margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+display: block;
+color:  #ffffff;
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+/* background-color:  ; */
+border-radius: 2px;
+
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+background-color:  navy;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+.footer-distributed{
+  font: bold 14px sans-serif;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.footer-distributed .footer-center i{
+  margin-left: 0;
+}
+
+}
+
+
+.active{
+    box-shadow: 2px 2px 4px 0px greenyellow;
+    font-size: 20px;
+    transition: all 0.3s;
+    /* background-color: yellowgreen; */
+    background-color:#3001EE;
+    background: linear-gradient(90deg, #3001EE, #F439B4);
+    color: black;
+}
+
+
+
+/* contactus section */
+.section-contact-main{
+  /* max-width: 100rem; */
+  margin: 20rem;
+  margin-top: 0rem;
+  margin-bottom: 5rem;
+  margin-right: 29rem;
+  /* margin-left: 59rem; */
+  transition: 0.3s linear;
+}
+.btn{
+  font-size: 25px;
+  padding: 0px 2px;
+  /* width: 20%; */
+  margin-top: 0rem;
+  border: 7px solid yellowgreen;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: yellowgreen;
+  font-family: cursive;
+  color: black;
+  font-weight: bolder;
+}
+.btn:hover{
+  box-shadow: 2px 3px 9px 0px wheat;
+  transition: all 0.3s;
+}
+
+.common-heading{
+  color: white;
+  text-shadow: 3px 3px palevioletred;
+  width: 30%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+  box-shadow: 2px 2px 0px 9px palevioletred;
+  border-radius: 3px;
+  text-align: center;
+  margin-left: 310px;
+  margin-bottom: 5rem;
+}
+.grid-two-column{
+  display: flex;
+  flex-direction: row;
+  gap: 26rem;
+}
+.section-contact-main form{
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.section-contact-main input, .section-contact-main textarea{
+  padding: 1.0rem 5rem;
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 5px;
+  font: 1.6rem;
+  font-family: "work Sans";
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Other styles for your home, about, and projects pages go here */
+
+
+

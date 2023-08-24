@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <a href="index.html" class="upper-key"><i class="fa fa-home"></i></a>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Garamond:wght@500&family=Dancing+Script:wght@700&family=Lora:ital,wght@1,500&family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header>
+    <!-- <h1>Shalini Sharma</h1> -->
+
+    <nav>
+      <ul>
+        <li><img src="logo.png" alt="logo" class="logo_head"></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section section-contact">
+    <div class="containercon">
+      <h2 class="common-heading">Contact Us</h2>
+    </div>
+
+    <div class="section-contact-main contact-container">
+      <form   action="https://formspree.io/f/xleybpze" method="POST" >
+        <div class="grid grid-two-column">
+          <div>
+            <label for="username"></label>
+            <input type="text" name="username" placeholder="Username" id="Username" autocomplete="off" required/>
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" name="email" placeholder="demo@mail.com" id="email" autocomplete="off" required/>
+          </div>
+        </div>
+
+        <div>
+          <label for="subject"></label>
+          <input type="text" name="subject" placeholder="subject" id="subject" autocomplete="off" required />
+        </div>
+
+        <div>
+          <label for="textarea"></label>
+          <textarea name="textarea" id="textarea" cols="20" rows="5" autocomplete="off" required min="5"></textarea>
+        </div>
+
+        <div>
+          <input type="submit" name="submit" id="submit" class="btn" style="width:20%; padding: 5px 2px; font-family: cursive; font-weight: bolder;font-size: 25px; border: 7px solid yellowgreen;">
+        </div>
+
+      </form>
+    </div>
+
+  </section>
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <!-- <h3>Company<span>logo</span></h3> -->
+      <img src="logo.png" alt="logo" class="logo">
+
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Projects</a>
+
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Shalini's Portfolio © 2023</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>New Delhi</span> Delhi, India</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+91-9650578744</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">support@company.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+        vehicula sit amet.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-envelope "></i></a>
+        <a href="#"><i class="fa fa-twitter "></i></a>
+        <a href="#"><i class="fa fa-linkedin "></i></a>
+        <a href="#"><i class="fa fa-github "></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
+</html>
