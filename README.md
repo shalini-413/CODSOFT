@@ -1,1 +1,5 @@
 # CODSOFT
+An internship offered by @codsoft
+TASK1: LANDING PAGE
+TASK2: PORTFOLIO
+Task3: CALCULATOR
