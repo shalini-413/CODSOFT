@@ -45,11 +45,15 @@
 
     <nav>
       <ul>
-        <li><img src="logo.png" alt="logo" class="logo_head"></li>
+        <div>
+          <li><img src="logo.png" alt="logo" class="logo_head"></li>
+        </div>
+        <div>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact Us</a></li>
+      </div>
       </ul>
     </nav>
   </header>
@@ -64,7 +68,7 @@
       </p>  -->
       <div class="boxLeft">
         <p id="homep1">Hey! This is me...</p>
-        <h1>Ms. Shalini</h1>
+        <h1 class="anim" data-text="Ms_Shalini...">Ms_Shalini...</h1>
         <h2>Web Developer</h2>
         <p id="homep2">Passionate web developer with expertise in HTML, CSS, and JavaScript, dedicated to crafting
           user-friendly websites and applications. Committed to staying updated with the latest technologies, fostering
@@ -77,8 +81,9 @@
             <img src="hero.jpg" alt="my image">
           </div>
           <div>
-            <button id="cv_btn">Download Resume</button>
-            <button id="hire_btn">Hire Me!</button>
+            <a href="Shalini's Resume.pdf" download="Shalini's Resume" id="cv_btn" target="_blank">Download Resume <i class="fa fa-download"></i></a>
+            
+            <a href="mailto:shalinishalu462002@example.com" id="hire_btn">Hire Me!</a>
           </div>
         </div>
         <div class="rightInside">
@@ -96,7 +101,7 @@
                 <i class="fa fa-envelope fa-2x"></i></a>
             </div>
   
-            <div class="item"><a href="https://twitter.com/your_username" target="_blank">
+            <div class="item"><a href="https://twitter.com/https://twitter.com/Shalinis_134" target="_blank">
                 <i class="fa fa-twitter fa-2x"></i></a>
             </div>
           </div>
@@ -181,22 +186,33 @@
         <table>
           <tr>
             <td>
-              <h3 id="table_head">Project 1</h3>
-              <p id="table_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, dolorem numquam, autem
-                neque soluta nostrum eos, dolor voluptate doloremque consequuntur est sint. Optio error odio odit
-                asperiores distinctio exercitationem suscipit?</p>
+              <h3 id="table_head">Running Car</h3>
+              <p id="table_para">This project is an interactive animation that incorporates various elements to create an
+                engaging experience. When a button is clicked, the animations are triggered, including moving elements,
+                shaking effects, and dynamic background changes.</p>
             </td>
-            <td><img src="hero.jpg" alt="" id="pro_img"></td>
+            <td><a href="https://github.com/shalini-413/Beginner_Animation/tree/main" target="_blank"><img src="pr1.jpg" alt=""
+                  id="pro_img"></a></td>
           </tr>
-          <tr>
   
-            <td><img src="hero.jpg" alt="" id="pro_img"></td>
+          <tr>
+            <td><a href="https://github.com/shalini-413/cardProject" target="_blank"><img src="pr2.jpg" alt="" id="pro_img"></a></td>
             <td>
-              <h3 id="table_head">Project 2</h3>
-              <p id="table_para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, dolorem numquam, autem
-                neque soluta nostrum eos, dolor voluptate doloremque consequuntur est sint. Optio error odio odit
-                asperiores distinctio exercitationem suscipit?</p>
+              <h3 id="table_head">Interactive Quiz</h3>
+              <p id="table_para">The Interactive Quiz is a fun web form that challenges your knowledge. Test your
+                understanding of various topics and receive immediate feedback on your score with dynamic animations and
+                sound effects. </p>
             </td>
+          </tr>
+  
+          <tr>
+            <td>
+              <h3 id="table_head">Card Project</h3>
+              <p id="table_para">This card project consists of three visually appealing and responsive cards designed
+                using HTML and CSS. Each card represents different content and styling.The project demonstrates the use of
+                flexbox, positioning, gradients, borders, and box shadows to create engaging card layouts.</p>
+            </td>
+            <td><a href="https://github.com/shalini-413/cardProject" target="_blank"><img src="pr3.jpg" alt="" id="pro_img"></a></td>
           </tr>
           <tr></tr>
           <tr></tr>
@@ -209,34 +225,37 @@
     <div class="containercon">
       <h2 class="common-heading">Contact Us</h2>
     </div>
+
     <div class="section-contact-main contact-container">
-    <form action="#">
-      <div class="grid grid-two-column">
-        <div>
-          <label for="username"></label>
-          <input type="text" name="username" placeholder="Username" id="Username"/>
+      <form   action="https://formspree.io/f/xleybpze" method="POST" >
+        <div class="grid grid-two-column">
+          <div>
+            <label for="username"></label>
+            <input type="text" name="username" placeholder="Username" id="Username" autocomplete="off" required/>
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" name="email" placeholder="demo@mail.com" id="email" autocomplete="off" required/>
+          </div>
         </div>
+
         <div>
-          <label for="email"></label>
-          <input type="text" name="email" placeholder="demo@mail.com" id="email"/>
+          <label for="subject"></label>
+          <input type="text" name="subject" placeholder="subject" id="subject" autocomplete="off" required />
         </div>
-      </div>
 
-      <div>
-        <label for="subject"></label>
-        <input type="text" name="subject" placeholder="subject" id="subject"/>
-      </div>
+        <div>
+          <label for="textarea"></label>
+          <textarea name="textarea" id="textarea" cols="20" rows="5" autocomplete="off" required min="5"></textarea>
+        </div>
 
-      <div>
-        <label for="textarea"></label>
-        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-      </div>
+        <div>
+          <input type="submit" name="submit" id="submit" class="btn" style="width:20%; padding: 5px 2px; font-family: cursive; font-weight: bolder;font-size: 25px; border: 7px solid yellowgreen;">
+        </div>
 
-      <div>
-        <input type="submit" name="submit" id="submit">
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
+
   </section>
 
 
@@ -275,7 +294,7 @@
 
       <div>
         <i class="fa fa-envelope"></i>
-        <p><a href="mailto:support@company.com">support@company.com</a></p>
+        <p><a href="mailto:shalinishalu462002@example.com" target="_blank">Mail any query!</a></p>
       </div>
 
     </div>
@@ -290,20 +309,16 @@
 
       <div class="footer-icons">
 
-        <a href="#"><i class="fa fa-envelope "></i></a>
-        <a href="#"><i class="fa fa-twitter "></i></a>
-        <a href="#"><i class="fa fa-linkedin "></i></a>
-        <a href="#"><i class="fa fa-github "></i></a>
+        <a href="mailto:shalinishalu462002@example.com" target="_blank"><i class="fa fa-envelope "></i></a>
+        <a href="https://twitter.com/https://twitter.com/Shalinis_134" target="_blank"><i class="fa fa-twitter "></i></a>
+        <a href="https://www.linkedin.com/in/shalini-sharma-8b9b15200" target="_blank"><i class="fa fa-linkedin "></i></a>
+        <a href="https://github.com/shalini-413"><i class="fa fa-github" target="_blank"></i></a>
 
       </div>
 
     </div>
 
   </footer>
-
-
-
-
 </body>
 
 </html>

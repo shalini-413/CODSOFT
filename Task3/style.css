@@ -69,15 +69,18 @@ font-family: 'Poppins', sans-serif; */
 nav{
   display: flex;
   justify-content: center;
+  margin-top: 100px;
   align-items: center;
   padding: 5px 0;
-  height: 6rem;
+  height: 1rem;
 }
 nav ul {
     list-style: none;
-    margin: 20px;
+    
+    margin: 10px;
     display: flex;
-    justify-content: end;
+    /* justify-content: end; */
+    justify-content: space-between;
     padding: 0;
 }
 
@@ -143,7 +146,7 @@ home Section Here
 .container {
     max-width: 1600px;
     /* margin: 0 auto; */
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 10px;
     height: 100vh;
     display: flex;
@@ -170,14 +173,36 @@ home Section Here
     text-transform: uppercase;
 }
 
-.boxLeft h1{
-    font-size: 80px;
-    color: yellowgreen;
-    font-family: cursive;
-    text-transform: uppercase;
-    box-shadow: 0px 0px 9px 0px wheat;
-    border-radius: 20px;
-    padding-left: 7px;
+.anim{
+  width: 510px;
+  position: relative;
+  font-size: 74px;
+  color: rgb(0 10 45);;
+  -webkit-text-stroke: 2px rgb(49, 47, 47);
+  text-transform: uppercase;
+}
+
+.anim::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  color: greenyellow;
+  -webkit-text-stroke: 0vw rgb(12, 11, 11);
+  border-right: 4px solid greenyellow;
+  overflow: hidden;
+  animation:animate 5s linear infinite;
+}
+@keyframes animate{
+  0%,10%,90%{
+    width: 0;
+  }
+  70%,90%{
+    width: 100%;
+  }
+  
 }
 
 .boxLeft h2{
@@ -215,6 +240,7 @@ home Section Here
     height: 300px;
     width: 600px;
     box-shadow: -2px -3px 9px 0px wheat;
+    margin-bottom: 20px;
 }
 
 #cv_btn{
@@ -227,6 +253,7 @@ home Section Here
     font-family: cursive;
     color: black;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 #cv_btn:hover{
@@ -781,7 +808,8 @@ margin-bottom: 5px;
     transition: all 0.3s;
     /* background-color: yellowgreen; */
     background-color:#3001EE;
-    background: linear-gradient(90deg, #3001EE, #F439B4);
+    /* background: linear-gradient(90deg, #3001EE, #F439B4); */
+    background: yellowgreen;
     color: black;
 }
 
