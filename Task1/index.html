@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental_Piece</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Garamond:wght@500&family=Dancing+Script:wght@700&family=Lora:ital,wght@1,500&family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outsideContainer {
+            /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=d229e3&c2=f90104&gt=l&gd=dcr
+*/
+background: linear-gradient(135deg, #FFA07A, #FFC0CB);
+            width: 100%;
+            height: 780px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .firstRow {
+            display: flex;
+            flex-direction: row;
+            gap: 23rem;
+            height: 80px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+
+        }
+
+        .item {
+            height: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            color: rgb(121, 0, 0);
+            margin: 10px;
+        }
+
+        .item:hover {
+            scale: 1.2;
+            transition: all 0.1s;
+        }
+
+        .contact {
+            margin: 10px;
+            display: flex;
+            color: rgb(121, 0, 0);
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        #mailme {
+            text-decoration: none;
+            color: rgb(121, 0, 0);
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+        }
+        #mailme:hover{
+            color: blue;
+        }
+
+        #request-btn {
+            font-size: 17px;
+            font-weight: bolder;
+            padding: 8px;
+            margin: 10px;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+          
+            background-color: #FF5733;
+            opacity: 0.9;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #request-btn:hover {
+            box-shadow: 2px 2px 9px 4px wheat;
+            scale: 1.01;
+            transition: all 0.1s;
+        }
+
+        img {
+            height: 550px;
+            width:1418px;
+           
+            margin-left: 50px;
+
+        }
+
+        .thirdRow {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            margin-left: 60px;
+            gap: 300px;
+            margin-top: 15px;
+            font-family: cursive;
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(121, 0, 0);
+        }
+
+        .thirdRow p {
+            font-size: 15px;
+            position: absolute;
+            color: rgb(136, 76, 3);
+            
+
+        }
+
+        #abouthead {
+            display: flex;
+            justify-content: left;
+            font-size: 60px;
+            
+            text-transform: uppercase;
+            margin-left: 150px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(134, 1, 1);
+        }
+
+        #para {
+            margin-top: 30px;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            box-shadow: 2px 2px 8px 2px grey;
+            padding: 15px;
+            color: rgb(76, 67, 67);
+            background: linear-gradient(135deg, #FFA07A, #FFC0CB);
+            
+        }
+
+        #downbox {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin: 100px;
+        }
+
+        .about {
+            width: 50%;
+            margin: 30px;
+        }
+
+        .rightdiv {
+            width: 50%;
+
+        }
+
+        .rightdiv img {
+            height: 640px;
+            width: 640px;
+        }
+        .container3{
+            margin: 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            background: linear-gradient(135deg, #FFA07A, #FFC0CB);
+            color: #fff;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #eee;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #FF5733;
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #E64A19;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
+        
+        .feature {
+            flex: 1;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #f9f9f9, #eee);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: scale(1.05);
+        }
+        
+        .feature h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .feature p {
+            font-size: 16px;
+            color: #777;
+        }
+        
+        .feature-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 40px;
+            color: #FF5733;
+            opacity: 0.2;
+        }
+
+        #servhead{
+            display: flex;
+            justify-content: left;
+            font-size: 60px;
+            margin-left: 460px;
+            text-transform: uppercase;
+            
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(134, 1, 1); 
+        }
+        #servpara{
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            box-shadow: 2px 2px 8px 2px grey;
+            padding: 10px;
+            color: #4c4343;;
+            background: linear-gradient(135deg, #FFA07A, #FFC0CB);
+        }
+        .new {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer-text {
+            font-size: 18px;
+            color: #333;
+        }
+        .col1 span{
+            box-shadow: -2px -2px 0px 0px rgb(66, 0, 0);
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        .col1 span:hover{
+            
+            transition: all 0.3s;
+            color: rgb(0, 0, 98);
+            box-shadow: -2px -2px 0px 2px rgb(0, 0, 98);
+            
+        }
+        .col1 p{
+            margin-top: 15px;
+            font-size: 20x;
+            letter-spacing: 1px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="outsideContainer">
+            <div class="firstRow">
+                <div class="links">
+                    <div><a href="https://github.com/shalini-413" target="_blank">
+                            <i class="fa fa-github fa-2x item"></i></a>
+                    </div>
+
+                    <div><a href="https://www.linkedin.com/in/shalini-sharma-8b9b15200" target="_blank">
+                            <i class="fa fa-linkedin fa-2x item"></i> </a>
+                    </div>
+
+                    <div>
+                        <a href="mailto:shalinishalu462002@example.com" class="mail">
+                            <i class="fa fa-envelope fa-2x item"></i></a>
+                    </div>
+
+                    <div><a href="https://twitter.com/https://twitter.com/Shalinis_134" target="_blank">
+                            <i class="fa fa-twitter fa-2x item"></i></a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact">
+                        <div>
+                            <p><i class="fa fa-phone"></i> +91-9650578744</p>
+                        </div>
+
+                        <div>
+
+                            <p><i class="fa fa-envelope"></i><a href="mailto:shalinishalu462002@example.com"
+                                    target="_blank" id="mailme"> Mail any query!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="request">
+                    <button id="request-btn"> Request a Consult</button>
+                </div>
+            </div>
+            <div class="secondRow">
+                <div class="image">
+                    <img src="bgimg.jpg" alt="">
+                    <div class="thirdRow">
+
+                        <div class="col1">
+                            <span>Wellness Tips</span>
+                            <p>Discover practical tips and techniques.</p>
+                        </div>
+                        <div class="col1">
+                            <span>Virtual Therapy</span>
+                            <p>Experience secure online therapy sessions.</p>
+                        </div>
+                        <div class="col1">
+                            <span>Professional Support</span>
+                            <p>Connect with experienced therapistse.</p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+    </section>
+
+    <section id="downbox">
+        <div class="about">
+            <h2 id="abouthead">About us</h2>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos architecto dolorem
+                nihil error culpa
+                assumenda? Asperiores velit quod corrupti consectetur iure dicta ex architecto molestiae, hic quas
+                eveniet
+                nulla! Debitis nam aspernatur fuga repellat dignissimos, eos deleniti possimus. Animi tempore illum,
+                quasi
+                quos accusantium iure mollitia aspernatur veritatis quis quidem amet blanditiis soluta libero
+                laudantium!
+                Excepturi, at culpa architecto quibusdam in obcaecati aperiam ad expedita et, aspernatur consectetur
+                corporis perspiciatis accusantium eveniet assumenda autem fugit vero? Deleniti incidunt enim natus quae
+                numquam, corrup sit, pariatur id tempora? Sequi nisi officia nemo dignissimos, aliquam neque
+                placeat eius. Consequatur doloribus adipisci ea, mollitia voluptatem eos eum, inventore ducimus sequi
+                aperiam eius sint vitae debitis culpa molestias! Facilis consequatur, omnis sint nihil et excepturi
+                eveniet
+                repudiandae quos, fuga nobis, molestiae eos? Quis aut alias laudantium dolores porro reiciendis autem
+                accusamus, fugit dicta inciduntempore, ullam temporibus nam ad cumque ratione laudantium
+                molestias vero ipsam.</p>
+        </div>
+        <div class="rightdiv">
+            <img src="webimg.png" alt="">
+        </div>
+    </section>
+
+    <section class="container3">
+        <h3 id="servhead">Our Services</h3>
+        <p id="servpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quis accusamus possimus dolores saepe,
+            delectus consequatur, earum sapiente esse aut commodi temporibus recusandae non veritatis, suscipit quos ad
+            rem fuga exercitationem debitis tempore magnam harum. Maxime modi doloremque alias animi harum blanditiis,
+            nostrum distinctio aut. Exercitationem quis accusamus iste ipsam? Nemo nisi maxime voluptatum consequuntur
+            debitis quam cum corrupti suscipit tempora, officiis quasi, perspiciatis nobis, placeat odit cumque
+            deserunt! Culpa laboriosam nemo sit ex doloribus labore quidem, deserunt dicta itaque ducimus ipsam!
+            Excepturi iusto reiciendis, tempore, consequatur voluptate deserunt eaque est quos natus ducimus illo ipsa
+            porro laboriosam et. Autem.</p>
+            <div class="container">
+                <div class="hero">
+                    <h1>Your Mental Well-being Matters</h1>
+                    <p>Discover the path to a healthier mind and soul.</p>
+                    <a href="#" class="cta-button">Get Started</a>
+                </div>
+            
+                <div class="features">
+                    <div class="feature">
+                        <h2>Guided Self-Care</h2>
+                        <p>Nurture your inner self with our expert-guided self-care practices.</p>
+                        <span class="feature-icon">&#128150;</span>
+                    </div>
+                    <div class="feature">
+                        <h2>Emotional Resilience</h2>
+                        <p>Build the strength to overcome life's challenges with our resilience programs.</p>
+                        <span class="feature-icon">&#128170;</span>
+                    </div>
+                    <div class="feature">
+                        <h2>Mindfulness Journey</h2>
+                        <p>Embark on a journey of mindfulness to find peace in the present moment.</p>
+                        <span class="feature-icon">&#128522;</span>
+                    </div>
+                </div>
+            </div>
+            
+    </section>
+
+    <footer class="new">
+    <p class="footer-text">Give Yourself a High Five for Prioritizing Mental Wellness 🙌</p>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Mental Wellness. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
